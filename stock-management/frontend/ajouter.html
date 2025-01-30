@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Produit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Première section - Titre et message -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <h1>Bienvenue !</h1>
+                <p>Ajouter un produit dans notre base de données</p>
+            </div>
+        </div>
+
+        <!-- Deuxième section - Formulaire -->
+        <div class="form-container">
+            <form id="addProductForm">
+                <h1>Ajouter un Produit</h1>
+
+                <div class="infield">
+                    <input type="text" id="name" placeholder="Nom du produit" required>
+                </div>
+
+                <div class="infield">
+                    <input type="number" id="quantity" placeholder="Quantité" min="1" required>
+                </div>
+
+                <div class="infield">
+                    <input type="date" id="expiration" placeholder="Date d'expiration" required>
+                </div>
+
+                <button type="submit">Ajouter</button>
+            </form>
+
+            <p id="message"></p>
+            <button onclick="window.location.href='index.html'">Retour</button>
+        </div>
+    </div>
+
+    <script src="ajouter.js"></script>
+</body>
+</html>

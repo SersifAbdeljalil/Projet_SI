@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestion de Stock</h1>
+
+    <!-- Tableau de la quantité totale -->
+    <div id="totalQuantity" class="total-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom du Produit</th>
+                    <th>Quantité Totale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produit Exemple</td>
+                    <td>150</td> <!-- Exemple de quantité totale -->
+                </tr>
+                <!-- Autres lignes peuvent être ajoutées ici -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Barre de recherche avec nouveaux boutons -->
+    <div class="search-bar">
+        <input type="text" id="search-name" placeholder="Rechercher par nom..." oninput="filterProducts()">
+        <input type="date" id="search-date" placeholder="Filtrer par date..." oninput="filterProducts()">
+        <button onclick="window.location.href='ajouter.html'">Ajouter Produit</button>
+        <button onclick="window.location.href='notification.html'" id="notifButton">Notifications</button>
+    </div>
+
+    <!-- Conteneur des produits -->
+    <div id="productsContainer">
+        <!-- Exemple d'une carte produit -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/100" alt="Produit">
+            <div class="product-info">
+                <h3>Produit Exemple</h3>
+                <p>Quantité: 10</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications -->
+    <div id="notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

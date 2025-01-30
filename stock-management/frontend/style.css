@@ -1,0 +1,122 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #eef5e1; /* Vert pâle inspiré de la nature */
+  color: #3e4b2b; /* Vert foncé pour un bon contraste */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #2c5e1a; /* Vert profond */
+}
+
+.search-bar {
+  background: #d4e4bc; /* Vert clair */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #a4b494;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #4c9a2a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #3e7c20;
+}
+
+#productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  border: 2px solid #a4b494;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:first-of-type {
+  background-color: #4c9a2a;
+  color: white;
+}
+
+.product-card button:last-of-type {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Style pour le tableau de la quantité totale */
+.total-table {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow-y: auto;  /* Permet le scroll si nécessaire */
+  max-height: 300px; /* Hauteur maximale pour activer le scroll */
+}
+
+.total-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.total-table th, .total-table td {
+  padding: 12px;
+  border: 1px solid #a4b494;
+  text-align: center;
+}
+
+.total-table th {
+  background-color: #d4e4bc; /* Fond vert clair pour les en-têtes */
+  color: #2c5e1a;
+}
+
+.total-table td {
+  background-color: #f9f9f9; /* Fond gris clair pour les données */
+  color: #4c9a2a;
+}
